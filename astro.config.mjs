@@ -22,4 +22,6 @@ export default defineConfig({
   // GitLab pages are served from a directory not the root of the domain.
   base: base
 
+  site: 'https://ehlovader.github.io',
+
 });
