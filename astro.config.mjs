@@ -20,7 +20,7 @@ export default defineConfig({
   publicDir: 'static',
 
   // GitLab pages are served from a directory not the root of the domain.
-  base: base
+  base: base,
 
   site: 'https://ehlovader.github.io',
 
