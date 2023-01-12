@@ -10,9 +10,9 @@ const base = process.env.NODE_ENV === 'production' ? '/astro-cloudflare-error' :
 export default defineConfig({
   integrations: [tailwind()],
 
-  // GitLab Pages requires exposed files to be located in a folder called "static".
-  // So we're instructing Astro to put the static build output in a folder of that name.
-  outDir: 'public',
+  // // GitLab Pages requires exposed files to be located in a folder called "static".
+  // // So we're instructing Astro to put the static build output in a folder of that name.
+  // outDir: 'public',
 
   // The folder name Astro uses for static files (`static`) is already reserved
   // for the build output. So in deviation from the defaults we're using a folder
