@@ -1,0 +1,21 @@
+---
+const CLOUDFLARE_ERROR_500S_BOX = '::CLOUDFLARE_ERROR_1000S_BOX::';
+---
+{process.env.NODE_ENV === 'production' ? CLOUDFLARE_ERROR_1000S_BOX :
+<div class="cf-error-details cf-error-1001">
+    <h1>DNS resolution error</h1>
+    <p>You've requested a page on a website (cloudflarepreview.com) that is on the <a data-orig-proto="https" data-orig-ref="www.cloudflare.com" target="_blank">Cloudflare</a> network. Cloudflare is currently unable to resolve your requested domain (cloudflarepreview.com). There are two potential causes of this:</p>
+    <ul>
+        <li><strong>Most likely:</strong> if the owner just signed up for Cloudflare it can take a few minutes for the website's information to be distributed to our global network.</li>
+        <li><strong>Less likely:</strong> something is wrong with this site's configuration. Usually this happens when accounts have been signed up with a partner organization (e.g., a hosting provider) and the provider's DNS fails.</li>
+    </ul>
+    <ul class="cferror_details">
+        <li>Ray ID: 000000000000000</li>
+        <li>Timestamp: Thu, 01-Jan-70 00:00:00 GMT</li>
+        <li>Your IP address: 2400:cb00:397:1024::ac46:7f5c</li>
+        <li class="XXX_no_wrap_overflow_hidden">Requested URL: example.url/foo </li>
+        <li>Error reference number: 1001</li>
+        <li>Server ID: FL_FOO</li>
+        <li>User-Agent: Example User Agent</li>
+    </ul>
+</div>
