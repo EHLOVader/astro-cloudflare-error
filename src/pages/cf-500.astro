@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import CLOUDFLARE_ERROR_500S_BOX from '../components/CLOUDFLARE_ERROR_500S_BOX.astro';
 ---
 
 <Layout title="500 - Internal Error">
@@ -20,7 +21,7 @@ import Layout from '../layouts/Layout.astro';
       </p>
       <div class="text-gray-400 pt-4 text-sm">
         <span>
-          ::CLOUDFLARE_ERROR_500S_BOX::
+          <CLOUDFLARE_ERROR_500S_BOX/>
         </span>
         <p>
           Ray ID: ::RAY_ID::

@@ -1,0 +1,15 @@
+---
+const CLOUDFLARE_ERROR_500S_BOX = '::CLOUDFLARE_ERROR_500S_BOX::';
+---
+{process.env.NODE_ENV === 'production' ? CLOUDFLARE_ERROR_500S_BOX :
+  <div class="cf-error-details cf-error-522">
+    <h1>Connection timed out</h1>
+    <p data-translate="connection_timed_out">The initial connection between Cloudflare's network and the origin web server timed out. As a result, the web page can not be displayed.</p>
+    <ul class="cferror_details">
+      <li>Ray ID: 000000000000000</li>
+      <li>Your IP address: 2001:8000:1368:f01:307b:546:2a3a:c7c3</li>
+      <li>Error reference number: 522</li>
+      <li>Cloudflare Location: POP: undef</li>
+    </ul>
+  </div>
+}
