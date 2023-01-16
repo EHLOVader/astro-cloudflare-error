@@ -1,0 +1,42 @@
+---
+const CAPTCHA_BOX = '::CAPTCHA_BOX::';
+---
+{process.env.NODE_ENV === 'production' ? CAPTCHA_BOX :
+<form class="challenge-form" id="challenge-form" action="https://cloudflarepreview.com/cdn-cgi/l/chk_captcha" method="get">
+  <base href="https://cloudflarepreview.com/cdn-cgi/" />
+  <script type="text/javascript" src="https://cloudflarepreview.com/cdn-cgi/scripts/cf.challenge.js" data-type="normal" data-ray="000000000000000" async data-sitekey=""></script>
+  <div class="g-recaptcha"></div>
+  <noscript id="cf-captcha-bookmark" class="cf-captcha-info">
+    <div><div style="width: 302px">
+      <div>
+        <iframe src="https://www.google.com/recaptcha/api/fallback?k=" frameborder="0" scrolling="no" style="width: 302px; height:422px; border-style: none;"></iframe>
+      </div>
+      <div style="width: 300px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;"></textarea>
+        <input type="submit" value="Submit"></input>
+      </div>
+    </div></div>
+  </noscript>
+</form>
+}
+
+<style>
+  .cf-error-details h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .cf-error-details p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
+  }
+
+  .cferror_details { display:inline-block; font-size:.8rem;  }
+  @-webkit-keyframes bubbles { 33%: { -webkit-transform:translateY(.5rem); transform:translateY(.5rem); } 66% { -webkit-transform:translateY(-.5rem); transform:translateY(-.5rem); } 100% { -webkit-transform:translateY(0); transform:translateY(0); } }
+  @keyframes bubbles { 33%:{ -webkit-transform:translateY(.5rem); transform:translateY(.5rem); } 66% { -webkit-transform:translateY(-.5rem); transform:translateY(-.5rem); } 100% { -webkit-transform:translateY(0); transform:translateY(0); } }
+  .bubbles { background-color:#555; width:1rem; height:1rem; margin:2rem .2rem; border-radius:100%; -webkit-animation:bubbles 0.6s 0.07s infinite ease-in-out; animation:bubbles 0.6s 0.07s infinite ease-in-out; -webkit-animation-fill-mode:both; animation-fill-mode:both; display:inline-block; }
+  .bubbles + .bubbles { -webkit-animation-delay: .2s; }
+  .bubbles + .bubbles + .bubbles { -webkit-animation-delay: .4s; }
+</style>
