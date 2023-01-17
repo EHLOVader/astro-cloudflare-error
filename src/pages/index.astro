@@ -57,11 +57,17 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		--theme-purple: hsl(256, 27%, 19%);
+	}
 	main {
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 60ch;
 	}
+
 	h1 {
 		font-size: 3rem;
 		font-weight: 800;
@@ -93,10 +99,10 @@ import Layout from '../layouts/Layout.astro';
 	.instructions strong {
 		color: rgb(var(--accent));
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+
+	a {
+		color: rgb(var(--accent)) !important;
+		text-underline-color: rgb(var(--accent)) !important;
+		border-color: rgb(var(--accent)) !important;
 	}
 </style>
