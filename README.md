@@ -4,6 +4,8 @@ AstroJS cloudflare error is a collection of custom error pages for Cloudflare.
 
 It is more or less a fork of [mjwebs/cloudflare-error](https://github.com/mjwebs/cloudflare-error/) with some modifications and added to the AstroJS structure.
 
+View the resulting error pages here https://ehlovader.github.io/astro-cloudflare-error/
+
 ## Requirements
   * CloudFlare Pro account or above
   * Github or Gitlab
