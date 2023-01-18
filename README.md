@@ -1,50 +1,34 @@
-# Welcome to [Astro](https://astro.build)
+# AstroJS Cloudflare custom error pages
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+AstroJS cloudflare error is a collection of custom error pages for Cloudflare. 
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+It is more or less a fork of [mjwebs/cloudflare-error](https://github.com/mjwebs/cloudflare-error/) with some modifications and added to the AstroJS structure.
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## Requirements
+  * CloudFlare Pro account or above
+  * Github or Gitlab
 
+## Installation
+1. Fork this repository
+2. Update repo as needed
+   * Update the email address in `ContactSupport.astro` or Remove `<ContactSupport />` from each error file
+   * Update styles to match your site
+   * Pages must remain under 1.43 MB including images, fonts, and styles
+3. Push changes to your fork, you will have a URL like `https://<your-username>.github.io/cloudflare-error-pages/`
+4. Open CloudFlare and go to your domain
+5. Click on the `Custom Pages` tab
+6. Click on the `Customize` button
+7. Enter the URL of the page for that error
+8. Click `Preview` to test that works and `Publish` to make it live
+9. Repeat for each error page
 
-## 🚀 Project Structure
+## TODO
+  * Finish Gitlab pages
 
-Inside of your Astro project, you'll see the following folders and files:
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Acknowledgments
+* [AstroJS](https://astro.build/)
+* [mjwebs/cloudflare-error](github.com/mjwebs/cloudflare-error)
+* [Cloudflare Error Pages](https://support.cloudflare.com/hc/en-us/articles/115003011431-Cloudflare-Error-Pages)
