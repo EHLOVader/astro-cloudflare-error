@@ -1,0 +1,15 @@
+---
+interface Props {
+    email: string;
+    subject_prefix: string;
+    body: string;
+}
+
+const { email = "cloudflare@spam4.me" , subject_prefix = "CloudFlare Error", body = "Describe issue here..." } = Astro.props;
+
+---
+
+<p class="text-gray-600 mb-4">
+    If you believe this to be an error,
+    please open a <a class="underline underline-offset-2 hover:border-b-2 focus:border-b-2 text-blue-800 border-blue-800" href={`mailto:${email}?subject=${subject_prefix} | Ray ID:::RAY_ID::&body=Describe issue here...`}>support ticket</a>.
+</p>
