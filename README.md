@@ -33,5 +33,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 * [AstroJS](https://astro.build/)
-* [mjwebs/cloudflare-error](github.com/mjwebs/cloudflare-error)
+* [mjwebs/cloudflare-error](https://github.com/mjwebs/cloudflare-error)
 * [Cloudflare Error Pages](https://support.cloudflare.com/hc/en-us/articles/115003011431-Cloudflare-Error-Pages)
