@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import CLOUDFLARE_ERROR_1000S_BOX from '../components/CLOUDFLARE_ERROR_1000S_BOX.astro';
+import ContactSupport from '../components/ContactSupport.astro';
 ---
 
 <Layout title="1000 - Internal Error">
@@ -12,13 +13,7 @@ import CLOUDFLARE_ERROR_1000S_BOX from '../components/CLOUDFLARE_ERROR_1000S_BOX
     <p class="text-gray-900 mb-4">
       We're sorry, something is not right and it's most likely our fault.
     </p>
-    <p class="text-gray-900 text-base mb-4">
-      If the issue persists, please open a
-      <a class="text-blue-600" href="mailto:support@mjwebs.io?subject=Internal Error 1000 | Ray ID:::RAY_ID::&body=Describe issue here...">
-        support ticket.
-      </a>
-    </p>
-
+    <ContactSupport subject_prefix="Internal Error 1000"/>
     <div class="text-gray-400 pt-4 text-sm">
       <span>
         <CLOUDFLARE_ERROR_1000S_BOX/>

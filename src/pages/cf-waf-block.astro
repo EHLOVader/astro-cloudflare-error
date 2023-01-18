@@ -1,15 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ContactSupport from '../components/ContactSupport.astro';
 ---
 
 <Layout title="Attention Required!">
   <div class="w-full max-w-lg mx-auto mt-20 p-5">
     <h1 class="font-thin text-3xl text-red-600"><span class="font-normal">403</span> Forbidden</h1>
 
-
-
     <p class="text-gray-900 mb-4">You do not have permission to view this website.</p>
-    <p class="text-gray-600 mb-4">If you believe this to be an error, please open a <a href="mailto:support@mjwebs.io?subject=Forbidden Access | Ray ID:::RAY_ID::&body=Describe issue here...">support ticket.</a></p>
+
+    <ContactSupport subject_prefix="403 - Forbidden" />
 
     <div class="text-gray-400 pt-2">
       <p>Ray ID: ::RAY_ID::</p>

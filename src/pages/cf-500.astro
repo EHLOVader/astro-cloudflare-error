@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import CLOUDFLARE_ERROR_500S_BOX from '../components/CLOUDFLARE_ERROR_500S_BOX.astro';
+import ContactSupport from '../components/ContactSupport.astro';
 ---
 
 <Layout title="500 - Internal Error">
@@ -12,12 +13,7 @@ import CLOUDFLARE_ERROR_500S_BOX from '../components/CLOUDFLARE_ERROR_500S_BOX.a
       <p class="text-gray-900 mb-4">
         We're sorry, something is not right, and it's most likely our fault.
       </p>
-      <p class="text-gray-900 text-base mb-4">
-        If the issue persists, please open a
-        <a class="text-blue-600" href="mailto:support@mjwebs.io?subject=Internal Error | Ray ID:::RAY_ID::&body=Describe issue here...">
-          support ticket.
-        </a>
-      </p>
+      <ContactSupport subject_prefix="500 - Internal Error" />
       <div class="text-gray-400 pt-4 text-sm">
           <CLOUDFLARE_ERROR_500S_BOX/>
       </div>
