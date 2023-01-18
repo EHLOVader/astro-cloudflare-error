@@ -1,6 +1,7 @@
 # AstroJS Cloudflare custom error pages
 
-AstroJS cloudflare error is a collection of custom error pages for Cloudflare. 
+AstroJS Cloudflare Error is a collection of custom error pages for any website built with AstroJS or not.
+These static pages use AstroJS and Github pages to make it easy to assign custom error pages in CloudFlare for your site.
 
 It is more or less a fork of [mjwebs/cloudflare-error](https://github.com/mjwebs/cloudflare-error/) with some modifications and added to the AstroJS structure.
 
